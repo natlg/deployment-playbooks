@@ -1,3 +1,0 @@
----
-- name: restart poa-orchestrator
-  service: name=poa-orchestrator state=restarted
