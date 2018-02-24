@@ -1,5 +1,5 @@
 ---
-  
+
 - import_playbook: bootnode.yml
 - import_playbook: validator.yml
 - import_playbook: netstat.yml
