@@ -1,3 +1,5 @@
 # CentsOS-specific variables
 
 ansible_python_interpreter: /usr/bin/python
+PARITY_BIN_LOC: "http://d1h4xl4cr1h0mo.cloudfront.net/v1.9.2/x86_64-unknown-centos-gnu/parity"
+PARITY_BIN_SHA256: "72d4a970e88abbe24dec46f2790b10dcdc4ad011b9dbec1c8c9ed2801f2bc6ca"
