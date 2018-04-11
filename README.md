@@ -1,6 +1,5 @@
 # Deployment playbooks
 
-
 This repository contains ansible playbooks used to deploy nodes of the network.
 
 * if you are a validator/want to participate by hosting a bootnode/or just want to get more information about the network, please refer to POA Network general wiki at https://github.com/poanetwork/wiki
