@@ -1,0 +1,4 @@
+- hosts: netstats-agent
+  become: True
+  roles:
+  - netstats-agent

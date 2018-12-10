@@ -3,7 +3,7 @@ ENV["LC_ALL"] = "en_US.UTF-8"
 
 Vagrant.configure("2") do |config|
 
-  servers = [ "validator", "explorer", "moc", "bootnode", "netstat", "blockscout" ]
+  servers = [ "validator", "explorer", "moc", "bootnode", "netstat", "blockscout", "netstats-agent" ]
 
   platform_os = ENV["poa_platform"]
   if platform_os == "ubuntu"
@@ -41,8 +41,9 @@ Vagrant.configure("2") do |config|
           "moc" => ["moc"],
           "bootnode" => ["bootnode"],
           "blockscout" => ["blockscout"],
+          "netstats-agent" => ["netstats-agent"],
         }
-        ansible.groups[platform_os] = [ "validator", "explorer", "netstat", "moc", "bootnode", "blockscout" ]
+        ansible.groups[platform_os] = [ "validator", "explorer", "netstat", "moc", "bootnode", "blockscout", "netstats-agent"]
       end
 
       node.vm.provision :shell do |shell|

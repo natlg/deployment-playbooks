@@ -21,3 +21,7 @@
 - name: Blockscout deployment
   import_playbook: blockscout.yml
   tags: blockscout
+
+- name: Netstats agent deployment
+  import_playbook: netstats-agent.yml
+  tags: netstats-agent

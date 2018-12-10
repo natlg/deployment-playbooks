@@ -1,0 +1,39 @@
+---
+
+- name: Download netstats-agent executable
+  get_url: url="{{agent_executable_url}}" dest="{{ home }}" mode=0755 group="{{ username }}" owner="{{ username }}"
+
+- name: Install packages
+  apt: name={{ item }} state=present update_cache=yes
+  with_items:
+#  - gtar
+  - unzip
+  - zip
+
+- name: unzip
+  shell: "tar -xvzf {{ home }}/poa_agent.tar.gz"
+
+- name: Create netstats agent user
+  uri:
+    url: http://www.example.com
+    return_content: yes
+  register: credentials
+  when: create_user == true
+
+- name: Save netstats agent user
+  set_fact: agent_user="user" agent_password="{{ netstats_password }}"
+  when: create_user == true
+
+- name: Add config file
+  template:
+    src: config_overlay.json.j2
+    dest: "{{ home }}/poa_agent/config/config_overlay.json"
+
+- name: Install netstats-agent service
+  template: src=netstats-agent.j2 dest=/etc/systemd/system/netstats-agent.service owner={{ username }} group={{ username }} mode=0755
+  notify:
+  - restart netstats-agent
+
+- name: Ensure netstats-agent is running and enabled to start at boot
+  service: name=netstats-agent state=started enabled=yes
+

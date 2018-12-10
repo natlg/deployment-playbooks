@@ -1,0 +1,25 @@
+---
+
+user: ubuntu
+
+allow_blockscout_ssh: true
+allow_blockscout_p2p: true
+allow_blockscout_http: true
+
+username: "netagent"
+users:
+- name: "{{ username }}"
+home: "/home/{{ username }}"
+
+MAIN_REPO_FETCH: "poanetwork"
+
+reboot_after_completion: false
+install_debug_tools: "no"
+install_firewall: false
+
+netstats_agent_version: "master"
+agent_executable_url: "https://4r45ow.dm.files.1drv.com/y4maXZgKKqw0H10Vz0iwOOwZvoVtUQ4Lw3sxx0LZCNWqfF_5SXvIV6TdibTsFhcnfVCj-pLLnlUkLAZB4nBWoJrSBe-3LG5KrRlS-bZGUdK4RCUGpE4uReDWTV68083lcoPQggw_A5x8G5NIrqubtZt4prpMg1UW-FGPpj9XKflLxGcdggW02_aSjaVlPwiyzAoWJRtjlZlqksaXUgK9ifiRA/poa_agent.tar.gz?download"
+
+create_user: false
+agent_user: "FKtzHQt4"
+agent_password: "Xd7qR9gAtV5T5bK"
