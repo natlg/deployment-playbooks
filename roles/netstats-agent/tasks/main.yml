@@ -11,7 +11,7 @@
   - zip
 
 - name: unzip
-  shell: "tar -xvzf {{ home }}/poa_agent.tar.gz"
+  shell: "tar -xvzf {{ home }}/poa_agent.tar.gz?download"
 
 - name: Create netstats agent user
   uri:

@@ -18,7 +18,7 @@ install_debug_tools: "no"
 install_firewall: false
 
 netstats_agent_version: "master"
-agent_executable_url: "https://4r45ow.dm.files.1drv.com/y4maXZgKKqw0H10Vz0iwOOwZvoVtUQ4Lw3sxx0LZCNWqfF_5SXvIV6TdibTsFhcnfVCj-pLLnlUkLAZB4nBWoJrSBe-3LG5KrRlS-bZGUdK4RCUGpE4uReDWTV68083lcoPQggw_A5x8G5NIrqubtZt4prpMg1UW-FGPpj9XKflLxGcdggW02_aSjaVlPwiyzAoWJRtjlZlqksaXUgK9ifiRA/poa_agent.tar.gz?download"
+agent_executable_url: "https://4r45ow.dm.files.1drv.com/y4mLS_qgxty6U8OSRgo2TiY_ctA_ulKE_h7q6YB5O2RVutBy1YuycZpnUJFTff1qYuOLL7vCQcZfOuxZ66Dr9SFayRC-FWjZFf9dMSycKEB1qkDX-xd8pkp09ujme5FLfDOc353FP1fu699YsTf9EYf9Lh_TocXfVXqT0cmOwtz5qmoadigTIfSW1TF8kxqGON7/poa_agent.tar.gz?download&psid=1"
 
 create_user: false
 agent_user: "FKtzHQt4"
